@@ -1,5 +1,5 @@
 Summary:	ne, the nice editor
-Summary(pl):	ne - ciekawy edytor tekstu
+Summary(pl):	ne - niez³y edytor
 Name:		ne
 Version:	1.39
 Release:	1
@@ -48,7 +48,7 @@ wewnêtrzna reprezentacja tekstu jest bardzo skondensowana - mo¿esz
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_infodir},%{_mandir}/man1}
 
-install -m 755 ./src/ne $RPM_BUILD_ROOT%{_bindir}/ne
+install ./src/ne $RPM_BUILD_ROOT%{_bindir}/ne
 install doc/ne.1 $RPM_BUILD_ROOT%{_mandir}/man1
 install doc/ne.info* $RPM_BUILD_ROOT%{_infodir}
 rm -f doc/ne.1 doc/ne.info*
