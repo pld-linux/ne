@@ -1,5 +1,5 @@
 Summary:	ne, the nice editor
-Summary(pl):	ne, ciekawy edytor tekstu
+Summary(pl):	ne - ciekawy edytor tekstu
 Name:		ne
 Version:	1.35
 Release:	2
@@ -24,13 +24,13 @@ large files.
 
 %description -l pl
 ne jest wolnym (na licencji GPL) edytorem tekstu bazuj±cym na
-standardzie POSIX który mozna uruchomiæ na prawie ka¿dej maszynie
+standardzie POSIX który mo¿na uruchomiæ na prawie ka¿dej maszynie
 UN*Xowej. ne jest ³atwy do u¿ycia dla pocz±tkuj±cych, ale potê¿ny i
 ³atwo konfigurowalny dla czarodziejów, oraz oszczêdny w u¿yciu
 zasobów. Je¿eli masz zasoby aby u¿yæ emacsa lub potrzebê korzystania z
 vi, wtedy ne prawdopodobnie nie jest dla ciebie. Mimo to, bêd±c
 szybkim, ma³ym, potê¿nym i ³atwym w u¿yciu jest idealny dla poczty,
-edycji poprzez linie telefoniczne(lub wolny GSM/GPRS) itepe. Co wiêcej,
+edycji poprzez linie telefoniczne (lub wolny GSM/GPRS) itp. Co wiêcej,
 wewnêtrzna reprezentacja tekstu jest bardzo skondensowana - mo¿esz
 ³atwo odczytywaæ i modyfikowaæ nawet bardzo du¿e pliki.
 
@@ -38,8 +38,7 @@ wewnêtrzna reprezentacja tekstu jest bardzo skondensowana - mo¿esz
 %setup -q
 
 %build
-cd src
-%{__make} \
+%{__make} -C src \
 	CC="%{__cc}" \
 	CFLAGS="-D_POSIX_C_SOURCE=199506L -DNODEBUG %{rpmcflags} -I%{_includedir}/ncurses" \
 	LDFLAGS="%{rpmldflags}"
@@ -47,6 +46,7 @@ cd src
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_infodir},%{_mandir}/man1}
+
 install -m 755 ./src/ne $RPM_BUILD_ROOT%{_bindir}/ne
 install doc/ne.1 $RPM_BUILD_ROOT%{_mandir}/man1
 install doc/ne.info* $RPM_BUILD_ROOT%{_infodir}
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README CHANGES terms
 %attr(755,root,root) %{_bindir}/ne
 %{_mandir}/man?/ne.1*
 %{_infodir}/ne.info*
-%doc README CHANGES terms
