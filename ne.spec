@@ -1,12 +1,12 @@
 Summary:	ne, the nice editor
 Summary(pl):	ne - ciekawy edytor tekstu
 Name:		ne
-Version:	1.35
-Release:	2
+Version:	1.36
+Release:	1
 License:	GPL
 Group:		Applications/Editors
 Source0:	http://ne.dsi.unimi.it/%{name}-%{version}.tar.gz
-# Source0-md5:	dfdec289ec522f3987596d2a43a02149
+# Source0-md5:	35aa750fb30b7ab17382b984f7f3ca29
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
