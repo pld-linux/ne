@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/Editors
 Source0:	http://ne.dsi.unimi.it/%{name}-%{version}.tar.gz
 # Source0-md5:	dfdec289ec522f3987596d2a43a02149
+BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
