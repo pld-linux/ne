@@ -1,12 +1,12 @@
 Summary:	ne, the nice editor
 Summary(pl):	ne - niez³y edytor
 Name:		ne
-Version:	1.40
+Version:	1.41
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications/Editors
 Source0:	http://ne.dsi.unimi.it/%{name}-%{version}.tar.gz
-# Source0-md5:	7fbbc0268dbcadfa6391670166c765f6
+# Source0-md5:	023e68d23a6216e89737ff2b6996aa77
 URL:		http://ne.dsi.unimi.it/
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
