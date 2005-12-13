@@ -41,7 +41,7 @@ wewnêtrzna reprezentacja tekstu jest bardzo skondensowana - mo¿esz
 %build
 %{__make} -C src \
 	CC="%{__cc}" \
-	CFLAGS="-D_POSIX_C_SOURCE=199506L -DNODEBUG %{rpmcflags} -I%{_includedir}/ncurses" \
+	CFLAGS="-D_POSIX_C_SOURCE=199506L -DNODEBUG %{rpmcflags} -I/usr/include/ncurses" \
 	LDFLAGS="%{rpmldflags}"
 
 %install
