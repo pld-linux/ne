@@ -1,5 +1,5 @@
 Summary:	ne, the nice editor
-Summary(pl):	ne - niez³y edytor
+Summary(pl.UTF-8):   ne - niezÅ‚y edytor
 Name:		ne
 Version:	1.41
 Release:	1
@@ -23,17 +23,17 @@ slow GSM/GPRS) connections and so on. Moreover, the internal text
 representation is very compact--you can easily load and modify very
 large files.
 
-%description -l pl
-ne jest wolnym (na licencji GPL) edytorem tekstu bazuj±cym na
-standardzie POSIX który mo¿na uruchomiæ na prawie ka¿dej maszynie
-UN*Xowej. ne jest ³atwy do u¿ycia dla pocz±tkuj±cych, ale potê¿ny i
-³atwo konfigurowalny dla czarodziejów, oraz oszczêdny w u¿yciu
-zasobów. Je¿eli masz zasoby aby u¿yæ emacsa lub potrzebê korzystania z
-vi, wtedy ne prawdopodobnie nie jest dla ciebie. Mimo to, bêd±c
-szybkim, ma³ym, potê¿nym i ³atwym w u¿yciu jest idealny dla poczty,
-edycji poprzez linie telefoniczne (lub wolny GSM/GPRS) itp. Co wiêcej,
-wewnêtrzna reprezentacja tekstu jest bardzo skondensowana - mo¿esz
-³atwo odczytywaæ i modyfikowaæ nawet bardzo du¿e pliki.
+%description -l pl.UTF-8
+ne jest wolnym (na licencji GPL) edytorem tekstu bazujÄ…cym na
+standardzie POSIX ktÃ³ry moÅ¼na uruchomiÄ‡ na prawie kaÅ¼dej maszynie
+UN*Xowej. ne jest Å‚atwy do uÅ¼ycia dla poczÄ…tkujÄ…cych, ale potÄ™Å¼ny i
+Å‚atwo konfigurowalny dla czarodziejÃ³w, oraz oszczÄ™dny w uÅ¼yciu
+zasobÃ³w. JeÅ¼eli masz zasoby aby uÅ¼yÄ‡ emacsa lub potrzebÄ™ korzystania z
+vi, wtedy ne prawdopodobnie nie jest dla ciebie. Mimo to, bÄ™dÄ…c
+szybkim, maÅ‚ym, potÄ™Å¼nym i Å‚atwym w uÅ¼yciu jest idealny dla poczty,
+edycji poprzez linie telefoniczne (lub wolny GSM/GPRS) itp. Co wiÄ™cej,
+wewnÄ™trzna reprezentacja tekstu jest bardzo skondensowana - moÅ¼esz
+Å‚atwo odczytywaÄ‡ i modyfikowaÄ‡ nawet bardzo duÅ¼e pliki.
 
 %prep
 %setup -q
