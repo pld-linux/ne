@@ -1,5 +1,5 @@
 Summary:	ne, the nice editor
-Summary(pl.UTF-8):   ne - niezły edytor
+Summary(pl.UTF-8):	ne - niezły edytor
 Name:		ne
 Version:	1.41
 Release:	1
